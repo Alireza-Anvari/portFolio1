@@ -1,0 +1,89 @@
+@font-face {
+    font-family: fontTiter;
+    src: url('./../fonts/agaleoz/Agaleoz.otf');
+  }
+  @font-face {
+    font-family: fontVazir;
+    src: url('./../fonts/vazir/Vazir.eot');
+    src: url('./../fonts/vazir/Vazir.ttf');
+    src: url('./../fonts/vazir/Vazir.woff');
+  }
+html{
+  scroll-behavior:smooth;
+}
+  body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-vazir);
+  }
+  :root{
+    --font-header: 'Russo One', sans-serif;
+    --background-main:#fff;
+    --background-menu-wide:#4ade80;
+    --background-menu-mobile:#9bf1bb;
+    --color-1:#fff;
+    --color-2:#4ade80;
+    --color-3:#000;
+    --font-vazir:fontVazir
+  }
+.header-logo{
+  font-family: var(--font-header);
+}
+
+.header-nav-menu{
+  background-color: var(   --background-menu-mobile);
+  transition: .3s;
+  
+}
+.active-header-nav-menu{
+  right: -2% !important;
+}
+.active-header-nav-menu.header-nav-menu >ul>li{
+  border-bottom: .1rem solid white;
+}
+.header-nav-menu >ul>li{
+  transition: .5s;
+}
+.header-nav-menu >ul>li:hover{
+  background: var(--background-main);
+  color: var(--color-3);
+
+}
+
+.header-phone>span{
+  padding: .5rem .6rem;
+  border-radius: 10px;
+  box-shadow: 0 0 1px 2px #fff;
+  color: var(--color-1);
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+
+.changeHeader{
+  box-shadow: 0 -6px 10px 1px #101010;
+}
+.footer__nav img{
+border-radius: 100%;
+box-shadow: 0 0 2px 1px #202020;
+}
+
+.section-left{
+  font-family: var(--font-vazir);
+  font-weight: bold;
+
+}
+
+@media screen and (max-width:768px) {
+  .section-left{
+    /* border-bottom:1px solid grey */
+  }
+  .home{
+    margin-bottom: 1rem;
+      /* border-bottom:1px solid grey */
+  }
+  
+}
+
+
